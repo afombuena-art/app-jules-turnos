@@ -1,0 +1,73 @@
+.daily-schedule {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.schedule-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.schedule-content {
+  padding: 15px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.shift-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shift-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.shift-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.employee-role {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.shift-time {
+  font-family: monospace;
+  font-weight: bold;
+  background-color: #e9ecef;
+  padding: 5px 10px;
+  border-radius: 4px;
+}

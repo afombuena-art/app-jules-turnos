@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.app-container {
+  max-width: 600px; /* Mobile view width limit */
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
