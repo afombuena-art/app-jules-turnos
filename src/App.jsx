@@ -21,21 +21,32 @@ function App() {
   const currentShifts = selectedRestaurantId ? shifts[selectedRestaurantId] : [];
 
   return (
-    <div className="app-container">
+  <div className="app-container">
+    <div className="app-header">
+      <div>
+        <p className="app-title">Gestión de turnos</p>
+        <p className="app-subtitle">
+          {selectedRestaurant ? selectedRestaurant.name : 'Selecciona un restaurante'}
+        </p>
+      </div>
+    </div>
+
+    <div className="app-content">
       {selectedRestaurantId === null ? (
-        <RestaurantSelector 
-          restaurants={restaurants} 
-          onSelect={handleSelectRestaurant} 
+        <RestaurantSelector
+          restaurants={restaurants}
+          onSelect={handleSelectRestaurant}
         />
       ) : (
-        <DailySchedule 
-          restaurantName={selectedRestaurant?.name} 
-          shifts={currentShifts} 
-          onBack={handleBack} 
+        <DailySchedule
+          restaurantName={selectedRestaurant?.name}
+          shifts={currentShifts}
+          onBack={handleBack}
         />
       )}
     </div>
-  );
-}
+  </div>
+);
+
 
 export default App;
